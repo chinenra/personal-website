@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+   
     <title>WholePage Slider</title>
 </head>
     
@@ -13,7 +14,22 @@
 
     <section>
         <div class="page page1">
-            <h1 class="h1-line h1-typewriter">Hi, I'm Torie.</h1>
+            <h1 class="h1-line h1-typewriter show-on-scroll">Hi, I'm Torie.</h1>
+            <p class="p-fade-in show-on-scroll">I'm a full-stack webdeveloper and storyteller.</p>
+        </div>  
+        <div class="page">
+            <h1>Hi! This is second page of first section!</h1>
+            <p>How are you?</p>
+        </div>  
+        <div class="page">
+            <h1>..still first section</h1>
+            <p>but 3rd page..</p>
+        </div>     
+    </section>
+
+    <section>
+        <div class="page page1">
+            <h1 class="h1-line h1-typewriter show-on-scroll">Hi, I'm Torie.</h1>
             <p>I'm a software engineer and storyteller.</p>
         </div>  
         <div class="page">
@@ -58,7 +74,7 @@
     </section>
 
 </div>
-
+<script src="js/show-on-scroll.js"></script>
 <script src="js/slider.js"></script>
 <script>
     new WholePageSlider({

@@ -30,8 +30,8 @@ body {
 }
   
   /* Animation */
-.h1-typewriter {
-    animation: typewriter 2s steps(17) .5s 1 normal both, 
+.h1-typewriter.is-visible {
+    animation: typewriter 1.5s steps(17) .5s 1 normal both, 
     blinkTextCursor 500ms steps(17) infinite normal; }
   
   @keyframes typewriter {
@@ -48,8 +48,6 @@ body {
       border-right-color: transparent;
     } 
 }
-  
-
 
 /* h1 {
     font-size: calc(2em + 1vw);
@@ -62,6 +60,50 @@ p {
     font-size: calc(1em + 0.5vw);
     text-align: center;
 }
+
+.p-fade-in.is-visible{
+    animation: fadeIn 3s linear 2s both;
+    -webkit-animation: fadeIn 2.5s linear 2s both;
+    -moz-animation: fadeIn 2.5s linear 2s both;
+    -o-animation: fadeIn 2.5s linear 2s both;
+    -ms-animation: fadeIn 2.5s linear 2s both; }
+
+    @keyframes fadeIn {
+        0% {
+          opacity:0;
+        }
+        100% {
+          opacity:1;
+        }
+    }
+      
+    @-moz-keyframes fadeIn {
+        0% {
+          opacity:0;
+        }
+        100% {
+          opacity:1;
+        }
+    }
+      
+    @-webkit-keyframes fadeIn {
+        0% {
+          opacity:0;
+        }
+        100% {
+          opacity:1;
+        }
+    }
+      
+    @-o-keyframes fadeIn {
+        0% {
+          opacity:0;
+        }
+        100% {
+          opacity:1;
+        }
+    }
+
 
 #wholepage {
     display: block;
@@ -105,7 +147,7 @@ section, .section {
     right: 0;
     position: absolute;
     z-index: -1;
-    background-image: url("../img/gradient.jpg");
+    background-image: url("../img/clouds.jpg");
     background-size: cover;
     opacity: 0.5; 
 }
