@@ -105,14 +105,14 @@
 
 .leaving-h1 {
   width: 9em;
-  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  border-right: 2px solid transparent;
   font-size: 180%;
   white-space: nowrap;
   overflow: hidden;
   transform: translateY(-50%); }
 
 .leaving-animation.is-visible {
-  animation: typewriter2 1.5s steps(17) 0.5s 1 normal both, blinkTextCursor 500ms steps(17) infinite normal; }
+  animation: typewriter2 1.5s steps(17) 0.5s 1 normal both, blinkTextCursor2 500ms steps(17) 6 normal; }
 
 @keyframes typewriter2 {
   from {
@@ -120,11 +120,13 @@
   to {
     width: 9em; } }
 
-@keyframes blinkTextCursor {
-  from {
+@keyframes blinkTextCursor2 {
+  0% {
     border-right-color: rgba(255, 255, 255, 0.75); }
-  to {
-    border-right-color: transparent; } }
+  50% {
+    border-right-color: transparent; }
+  100% {
+    display: none; } }
 
 body, html {
   margin: 0;
