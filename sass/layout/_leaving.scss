@@ -1,0 +1,53 @@
+.leaving {
+    position: relative;
+}
+
+.leaving-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+}
+
+.leaving-page {
+    padding-top: 10%;
+    padding-left: 30px;
+    flex: 1 0 100%;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    transform: translate(0, 0);
+    transition: transform 0.4s ease-out;
+}
+
+.leaving-h1 {
+    width: 9em;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    font-size: 180%;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+.leaving-animation.is-visible {
+    animation: typewriter2 1.5s steps(17) .5s 1 normal both, 
+    blinkTextCursor 500ms steps(17) infinite normal; }
+
+    @keyframes typewriter2 {
+        from {
+            width: 0; }
+        to {
+            width: 9em; }
+        }
+
+    @keyframes blinkTextCursor {
+        from {
+            border-right-color: rgba(255, 255, 255, 0.75); }
+        to {
+            border-right-color: transparent;
+        } 
+    }
