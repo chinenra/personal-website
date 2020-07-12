@@ -1,0 +1,168 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    user-select: none;
+    overflow-y: hidden;
+    touch-action: none;
+    overscroll-behavior-y: contain;
+
+}
+
+/* Google Fonts */
+.h1-line {
+    /* position: relative; */
+    /* top: 50%; */
+    width: 6em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%); 
+}
+  
+  /* Animation */
+.h1-typewriter {
+    animation: typewriter 2s steps(17) .5s 1 normal both, 
+    blinkTextCursor 500ms steps(17) infinite normal; }
+  
+  @keyframes typewriter {
+    from {
+      width: 0; }
+    to {
+      width: 6em; }
+    }
+  
+  @keyframes blinkTextCursor {
+    from {
+      border-right-color: rgba(255, 255, 255, 0.75); }
+    to {
+      border-right-color: transparent;
+    } 
+}
+  
+
+
+/* h1 {
+    font-size: calc(2em + 1vw);
+    margin: 0; padding: 0;
+    text-align: center;
+} */
+
+p {
+    font-weight: 100;
+    font-size: calc(1em + 0.5vw);
+    text-align: center;
+}
+
+#wholepage {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow: hidden;
+}
+
+section, .section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transform: translate(0, 0);
+    transition: transform 0.4s ease-out;
+    margin: 0; padding: 0;
+  
+}
+
+
+.page {
+    flex: 1 0 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0, 0);
+    transition: transform 0.4s ease-out;
+}
+
+.page1::after {
+    content: "";
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-image: url("../img/gradient.jpg");
+    background-size: cover;
+    opacity: 0.5; 
+}
+
+.sectionButtonContainer {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    right: 3vw; 
+    color: rgb(30, 30, 30);
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+
+}
+
+.sectionButtonContainer label, .page_selection label {
+    display: inline-flex;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255, 0.8);
+    transition: transform 0.2s;
+    margin: 12px 12px;
+    padding: 0px;
+    box-shadow: 0px 0px 8px rgba(0, 27, 160, 0.8);
+    cursor: pointer;
+}
+
+.sectionButtonContainer label::after, .page_selection label::after {
+    content: '';
+    display: inline-flex;
+    position: relative;
+    top: -10px;
+    left: -10px;
+    padding: 12px;
+}
+
+.sectionButtonContainer input[type=radio]:checked + label::after, .page_selection input[type=radio]:checked + label::after {
+   display: none;
+}
+
+
+.sectionButtonContainer input[type=radio]:checked + label, .page_selection input[type=radio]:checked + label  {
+    transform: scale(2.2);
+    transition: transform 0.2s;
+}
+
+
+
+.page_selection {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    bottom: 2vh;
+    left: 40%; 
+    color: rgb(30, 30, 30);
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+    z-index: 999999; 
+
+}
