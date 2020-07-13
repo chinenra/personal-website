@@ -24,18 +24,60 @@
     transition: transform 0.4s ease-out;
 }
 
-.leaving-h1 {
-    width: 7em;
+.leaving-p {
+    text-align: left;
     border-right: 2px solid transparent;
-    font-size: 180%;
     white-space: nowrap;
     overflow: hidden;
     transform: translateY(-50%);
 }
 
+.leaving-p-fade-in.is-visible{
+    animation: fadeIn 1s linear both;
+    -webkit-animation: fadeIn 1s linear both;
+    -moz-animation: fadeIn 1s linear both;
+    -o-animation: fadeIn 1s linear both;
+    -ms-animation: fadeIn 1s linear both; }
+
+    @keyframes fadeIn {
+        0% {
+          opacity:0;
+        }
+        100% {
+          opacity:1;
+        }
+    }
+      
+    @-moz-keyframes fadeIn {
+        0% {
+          opacity:0;
+        }
+        100% {
+          opacity:1;
+        }
+    }
+      
+    @-webkit-keyframes fadeIn {
+        0% {
+          opacity:0;
+        }
+        100% {
+          opacity:1;
+        }
+    }
+      
+    @-o-keyframes fadeIn {
+        0% {
+          opacity:0;
+        }
+        100% {
+          opacity:1;
+        }
+    }
+
 .leaving-animation.is-visible {
-    animation: typewriter2 1.5s steps(17) .5s 1 normal both, 
-    blinkTextCursor2 500ms steps(17) 9 normal; }
+    animation: typewriter2 1s steps(17) 1s 1 normal both, 
+    blinkTextCursor2 500ms steps(17) 1s 3 normal; }
 
     @keyframes typewriter2 {
         from {

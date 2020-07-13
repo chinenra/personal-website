@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
    
-    <title>WholePage Slider</title>
+    <title>Torie CR</title>
 </head>
     
 <body>  
@@ -21,7 +21,7 @@
         </div>
         <div class="intro-page">
             <h1 class="intro-h1 intro-animation show-on-scroll">Hi, I'm Torie.</h1>
-            <p class="p-fade-in show-on-scroll">I'm a full-stack webdeveloper and storyteller.</p>
+            <p class="intro-p-fade-in show-on-scroll">I'm a full-stack webdeveloper and storyteller.</p>
         </div> 
     </section>
 
@@ -33,10 +33,25 @@
             </video>
         </div>
         <div class="leaving-page">
-            <h1 class="leaving-h1 leaving-animation show-on-scroll">By 2016, I was:</h1>
-            <p>
-                By 2016, I was pursuing a degree in Physics and Computer Science, while working full-time as a commission-based salesperson. 
-            </p>
+            <!-- <h1 class="leaving-h1 leaving-animation show-on-scroll">By 2016, I was:</h1> -->
+            <p class="leaving-p leaving-p-fade-in show-on-scroll">I left Hawaii on my own in 2015.</p>
+            <p class="leaving-p leaving-animation show-on-scroll">By 2016, I was:</p>
+            <ul>
+                <li>Pursuing a B.S. in Physics and Computer Science at University of Southern California (2016-2020)</li>
+                <li>Supporting myself as a commission-based salesperson</li>
+            </ul>
+        </div>   
+    </section>
+
+    <section class="experience">
+        <div class="experience-video">
+            <video class="experience-video__content" autoplay muted loop>
+                <source src="img/test2.mp4" type="video/mp4">
+                Your browser is not supported!
+            </video>
+        </div>
+        <div class="experience-page">
+            <h1 class="experience-h1 experience-h1-fade-in show-on-scroll">I decided to diversify my experiences:</h1>
         </div>   
     </section>
     <!-- Intro: Hi, I'm Torie -->
@@ -100,7 +115,7 @@
 <script src="js/slider.js"></script>
 <script>
     new WholePageSlider({
-        colors: ['lightgrey', 'orange', 'white', 'lightgrey']
+        colors: ['lightgrey', 'orange', 'lightgrey', 'lightgrey']
     })
 </script>
 </body>

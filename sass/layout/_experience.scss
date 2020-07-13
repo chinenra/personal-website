@@ -1,8 +1,8 @@
-.intro {
+.experience {
     position: relative;
 }
 
-.intro-video {
+.experience-video {
     position: absolute;
     top: 0;
     left: 0;
@@ -11,56 +11,35 @@
     opacity: 0.5;
 }
 
-.intro-page {
+.experience-page {
+    padding-top: 10%;
+    padding-left: 30px;
     flex: 1 0 100%;
-    display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     transform: translate(0, 0);
     transition: transform 0.4s ease-out;
 }
 
-/* Google Fonts */
-.intro-h1 {
-    width: 6em;
+.experience-h1 {
+    width: 20em;
     margin: 0 auto;
-    border-right: 2px solid rgba(255, 255, 255, 0.75);
     font-size: 180%;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
     transform: translateY(-50%);
 }
-  
-  /* Animation */
-.intro-animation.is-visible {
-    animation: typewriter 1.5s steps(17) .5s 1 normal both, 
-    blinkTextCursor 500ms steps(17) infinite normal; }
 
-    @keyframes typewriter {
-        from {
-            width: 0; }
-        to {
-            width: 6em; }
-        }
-
-    @keyframes blinkTextCursor {
-        from {
-            border-right-color: rgba(255, 255, 255, 0.75); }
-        to {
-            border-right-color: transparent;
-        } 
-    }
-
-.intro-p-fade-in.is-visible{
-    animation: fadeIn 3s linear 2s both;
-    -webkit-animation: fadeIn 2.5s linear 2s both;
-    -moz-animation: fadeIn 2.5s linear 2s both;
-    -o-animation: fadeIn 2.5s linear 2s both;
-    -ms-animation: fadeIn 2.5s linear 2s both; }
+.experience-h1-fade-in.is-visible{
+    animation: fadeIn 1s linear both;
+    -webkit-animation: fadeIn 1s linear both;
+    -moz-animation: fadeIn 1s linear both;
+    -o-animation: fadeIn 1s linear both;
+    -ms-animation: fadeIn 1s linear both; }
 
     @keyframes fadeIn {
         0% {
@@ -70,7 +49,7 @@
           opacity:1;
         }
     }
-      
+    
     @-moz-keyframes fadeIn {
         0% {
           opacity:0;
